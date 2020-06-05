@@ -13,5 +13,5 @@ Team Member 2 GitHub Username: shamakbar <br/>
 
 ### Repository Description ###
 Phase I Information: <br/>
-Documentation Folder Contains Problem Statement, Functional Dependicies, Domain, Constraints, and Sample Data. <br/>
+Documentation Folder Contains Problem Statement, Functional Dependencies, Domain, Constraints, and Sample Data. <br/>
 Design Diagrams Folder Contains ER Diagram and Relational Model. <br/>
