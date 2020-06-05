@@ -13,3 +13,6 @@ Team Member 2 GitHub Username: shamakbar <br/>
 
 ### Repository Description ###
 <Provide a brief description of the structure of your repository. It is recommended that you organize your repository into separate areas for documentation, design diagrams, SQL scripts, etc.>
+Phase I Information:
+Documentation Folder Contains Problem Statement, Functional Dependicies, Domain, Constraints, and Sample Data. <br/>
+Design Diagrams Folder Contains ER Diagram and Relational Model. <br/>
