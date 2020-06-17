@@ -1,5 +1,6 @@
 # 508-summer-2020-project
 Repository for semester project for CMSC 508, Summer 2020
+Note: All Work is an Effort of Both Team Members, Regardless of Who Made the Commit
 
 ### Team Members ###
 Team Member 1: Megan Spiers <br/>
