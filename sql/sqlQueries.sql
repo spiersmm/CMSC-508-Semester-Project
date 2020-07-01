@@ -24,7 +24,9 @@ WHERE `First Name` = 'Tom';
 
 
 6. What is the name of a specific blood type recipient? 
---Query here--
+SELECT `First Name`, `Last Name` 
+FROM `Recipient`
+WHERE `Blood Type` = 'B+';
 
 
 7. How many recipients are waiting for blood donations? 
