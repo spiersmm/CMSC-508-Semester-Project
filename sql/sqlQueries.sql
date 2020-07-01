@@ -69,7 +69,8 @@ SELECT * FROM `Blood Donor`;
 
 
 16. What is the address of a certain employee? 
---Query here--
+SELECT Address FROM Employee 
+WHERE (`First Name` like 'Katniss' AND `Last Name` like 'Evedeen');
 
 
 17. What is the salary of a certain employee? 
