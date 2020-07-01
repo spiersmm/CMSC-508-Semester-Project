@@ -37,7 +37,7 @@ create table `Recipient`(
   DOB VARCHAR(20),
   Sex VARCHAR(5),
  `Date of Receive` VARCHAR(20),
-  Vists INT
+  Visits INT
 
 );
 
