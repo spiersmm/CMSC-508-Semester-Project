@@ -1,0 +1,79 @@
+1. What is the current stock of the blood inventory? 
+--Query here--
+
+
+2. What is the hemoglobin count of a certain BloodBagNo? 
+--Query here--
+
+
+3. What is the gender of the recipient? 
+--Query here--
+
+
+4. Which blood donors have a specific blood group?
+--Query here--
+
+
+5. What is the contact information of a specific blood donor? 
+--Query here--
+
+
+6. What is the name of a specific blood recipient? 
+--Query here--
+
+
+7. How many recipients are waiting for blood donations? 
+--Query here--
+
+
+8. What is the list of the patients according to the priority of blood need? 
+--Query here--
+
+
+9. Which employee is in charge for which donor and recipient? 
+--Query here--
+
+
+10. When was the first time the blood donor donated? 
+--Query here--
+
+
+11. What date did the patient receive the blood? 
+--Query here--
+
+
+12. Which blood groups are going to expire soon? 
+--Query here--
+
+
+13. What is the cost of a blood transfusion? 
+--Query here--
+
+
+14. What is the list of all available blood donors? 
+--Query here--
+
+
+15. What is the name of the employee that worked with a specific patient on a specific date? 
+--Query here--
+
+
+16. What is the address of a certain employee? 
+--Query here--
+
+
+17. What is the salary of a certain employee? 
+--Query here--
+
+
+18. How many blood donations took place today? 
+--Query here--
+
+
+19. How many times has a specific donor donated? 
+--Query here--
+
+
+20. How many visits did the blood recipient have so far?
+--Query here--
+
