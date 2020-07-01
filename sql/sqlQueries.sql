@@ -56,7 +56,8 @@ WHERE (`First Name` like 'Padme' AND `Last Name` like 'Amidale');
 
 
 13. What is the cost of a specific blood transfusion? 
---Query here--
+SELECT Cost FROM Blood 
+WHERE `Blood Type` = 'A-';
 
 
 14. What is the list of all available blood donors? 
