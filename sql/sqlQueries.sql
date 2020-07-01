@@ -74,7 +74,8 @@ WHERE (`First Name` like 'Katniss' AND `Last Name` like 'Evedeen');
 
 
 17. What is the salary of a certain employee? 
---Query here--
+SELECT Salary FROM Employee 
+WHERE (`First Name` like 'Katniss' AND `Last Name` like 'Evedeen');
 
 
 18. How many blood donations took place today? 
