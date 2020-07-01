@@ -1,21 +1,26 @@
 1. What is the current stock of the blood inventory? 
-SELECT Quantity FROM 'Blood Inventory';
+SELECT Quantity 
+FROM 'Blood Inventory';
 
 
 2. What is the hemoglobin count of a certain BloodBagNo? 
-SELECT 'hemoglobin count' Where BloodBagNo = 13;
+SELECT 'hemoglobin count' 
+WHERE BloodBagNo = 13;
 
 
-3. What is the gender of the recipient? 
---Query here--
+3. What is the gender of the recipient of a specific blood type? 
+SELECT Sex FROM `Recipient` 
+WHERE `Blood Type`= 'B+';
 
 
 4. Which blood donors have a specific blood group?
---Query here--
+SELECT `First Name`, `Last Name`
+FROM `Blood Donor` WHERE `Blood Type` = 'AB-';
 
 
 5. What is the contact information of a specific blood donor? 
---Query here--
+SELECT Phone FROM `Blood Donor` 
+WHERE `First Name` = 'Tom'; 
 
 
 6. What is the name of a specific blood recipient? 
@@ -38,8 +43,10 @@ SELECT 'hemoglobin count' Where BloodBagNo = 13;
 --Query here--
 
 
-11. What date did the patient receive the blood? 
---Query here--
+11. What date did a specific patient receive the blood? 
+SELECT `Date of Receive` 
+FROM `Recipient`
+WHERE (`First Name` like 'Padme' AND `Last Name` like 'Amidale');
 
 
 12. Which blood groups are going to expire soon? 
