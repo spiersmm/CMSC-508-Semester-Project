@@ -1,9 +1,9 @@
 1. What is the current stock of the blood inventory? 
---Query here--
+SELECT Quantity FROM 'Blood Inventory';
 
 
 2. What is the hemoglobin count of a certain BloodBagNo? 
---Query here--
+SELECT 'hemoglobin count' Where BloodBagNo = 13;
 
 
 3. What is the gender of the recipient? 
