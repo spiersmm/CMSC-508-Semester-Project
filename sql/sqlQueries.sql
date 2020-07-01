@@ -53,12 +53,12 @@ WHERE (`First Name` like 'Padme' AND `Last Name` like 'Amidale');
 --Query here--
 
 
-13. What is the cost of a blood transfusion? 
+13. What is the cost of a specific blood transfusion? 
 --Query here--
 
 
 14. What is the list of all available blood donors? 
---Query here--
+SELECT * FROM `Blood Donor`;
 
 
 15. What is the name of the employee that worked with a specific patient on a specific date? 
@@ -81,6 +81,8 @@ WHERE (`First Name` like 'Padme' AND `Last Name` like 'Amidale');
 --Query here--
 
 
-20. How many visits did the blood recipient have so far?
---Query here--
+20. How many visits did a specific blood recipient have so far?
+SELECT Vists FROM 
+`Recipient`
+WHERE (`First Name` like 'Ahsoka' AND `Last Name` like 'Tano');
 
