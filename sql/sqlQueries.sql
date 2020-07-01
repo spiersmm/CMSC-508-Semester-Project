@@ -23,7 +23,7 @@ SELECT Phone FROM `Blood Donor`
 WHERE `First Name` = 'Tom'; 
 
 
-6. What is the name of a specific blood recipient? 
+6. What is the name of a specific blood type recipient? 
 --Query here--
 
 
