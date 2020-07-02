@@ -12,9 +12,9 @@ INSERT INTO Employee VALUES(6234663, 'Katniss', 'Everdeen', '05/08/1998', 'F', '
 INSERT INTO Employee VALUES(1231222, 'Peeta', 'Mellark', '04/20/1998', 'M', '777-333-2222', '4545 Bakers Rd', 50);
 INSERT INTO Employee VALUES(1241212, 'Gale', 'Hawthorne', '08/20/1996', 'M', '444-666-2425', '1234 Seam St', 12000);
 
-INSERT INTO `Blood Inventory` VALUES(42785, 'No Complications', 'O-', '3rd', 51);
-INSERT INTO `Blood Inventory` VALUES(37597, 'No Complications', 'B+', '2nd', 30);
-INSERT INTO `Blood Inventory` VALUES(25547, 'No Complications', 'AB-', '1st', 12);
+INSERT INTO `Blood Inventory` VALUES(42785, 'No Complications', 'O-', '3', 51);
+INSERT INTO `Blood Inventory` VALUES(37597, 'No Complications', 'B+', '2', 30);
+INSERT INTO `Blood Inventory` VALUES(25547, 'No Complications', 'AB-', '1', 12);
 
 
 INSERT INTO Blood VALUES(0032, 14, 'A-', '0.5 Pint', '$275');
