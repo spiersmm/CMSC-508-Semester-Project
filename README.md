@@ -17,7 +17,7 @@ Phase I Information: <br/>
 Documentation Folder Contains Problem Statement, Functional Dependency and Normalization Document, Domain, Constraints, and Sample Data. <br/>
 Design Diagrams Folder Contains ER Diagram and Relational Model. <br/>
 <br/>
-Phase II Information <br/>
+Phase II Information: <br/>
 Documentation Folder Contains Updated Problem Statement and Updated Functional Dependency and Normalization Document <br/>
 Design Diagrams Folder Contains Updated ER Diagram and Updated Relational Model <br/>
 Code Folder Contains projects.sql File to Create Tables, projectInserts.sql File to Insert Data Into the Database, sqlQueries.sql File to Return the Requested Information From Our 20 Queries, and Other SQL Files TBD to Return the Triggers, Procedures, and Views <br/>
