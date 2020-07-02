@@ -44,9 +44,11 @@ FROM `Blood Inventory`
 ORDER BY `Order` ASC;
 
 
-9. Which employee is in charge for which donor and recipient? 
---Query here--
-Select
+-- DELETE ORIGINAL 9. Which employee is in charge for which donor and recipient? 
+  -- 9. What is the description on a certain bloodno (ex. 42785)?
+SELECT `Description`
+FROM `Blood Inventory`
+WHERE BloodNo = '42785';
 
 
 -- CHANGED FROM ORIGINAL 10. When was the last time the blood donor donated (ex. Drew Brees)? 
@@ -61,9 +63,11 @@ FROM `Recipient`
 WHERE (`First Name` LIKE 'Padme') AND (`Last Name` LIKE 'Amidala');
 
 
-12. Which blood groups are going to expire soon? 
---Query here--
-Select
+-- DELETE ORIGINAL 12. Which blood groups are going to expire soon? 
+  -- 12. What is the blood amount for a certain blood bag no (ex. 0027)?
+SELECT `Blood Amount`
+FROM `Blood`
+WHERE BloodBagNo = 0027;
 
 
   -- 13. What is the cost of a specific blood transfusion (ex. A-)? 
@@ -77,9 +81,11 @@ SELECT *
 FROM `Blood Donor`;
 
 
-15. What is the name of the employee that worked with a specific patient on a specific date? 
---Query here--
-select
+-- DELETE ORIGINAL 15. What is the name of the employee that worked with a specific patient on a specific date? 
+  -- 15. What is the date of birth of a certain employee (ex. Gale Hawthorne)?
+SELECT DOB
+FROM Employee
+WHERE (`First Name` like 'Gale') AND (`Last Name` like 'Hawthorne');
 
 
   -- 16. What is the address of a certain employee (ex. Katniss Everdeen)? 
@@ -91,7 +97,7 @@ WHERE (`First Name` LIKE 'Katniss') AND (`Last Name` LIKE 'Everdeen');
   -- 17. What is the salary of a certain employee (ex. Katniss Everdeen)? 
 SELECT Salary 
 FROM Employee 
-WHERE (`First Name` like 'Katniss') AND (`Last Name` like 'Evedeen');
+WHERE (`First Name` LIKE 'Katniss') AND (`Last Name` LIKE 'Evedeen');
 
 
 -- CHANGED FROM ORIGINAL 18. How many blood donations took place on a certain date (ex. 05/20/2019)? 
@@ -100,9 +106,11 @@ FROM `Blood Donor`
 WHERE `Date of Donation` = '05/20/2019';
 
 
-19. How many times has a specific donor donated? 
---Query here--
-select
+-- DELETE ORIGINAL 19. How many times has a specific donor donated? 
+  -- 19. What is the BloodID of a certain blood donor (ex. Aaron Rodgers)?
+SELECT BloodID
+FROM `Blood Donor`
+WHERE (`First Name` LIKE 'Aaron') AND (`Last Name` LIKE 'Rodgers');
 
 
   -- 20. How many visits did a specific blood recipient have so far (ex. Ahsoka Tano)?
