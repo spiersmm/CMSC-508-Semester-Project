@@ -61,7 +61,7 @@ Create table `Blood Inventory`(
 BloodNO INT PRIMARY KEY,
 Description VARCHAR(50),
 `Blood Type` VARCHAR(5),
-`Order`      VARCHAR(10),
+`Order`      INT,
 Quantity     INT          
 
 );
