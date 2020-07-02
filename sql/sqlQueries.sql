@@ -30,7 +30,7 @@ WHERE (`First Name` = 'Tom') AND (`Last Name` = 'Brady');
   -- 6. What is/are the name(s) of a specific blood type recipient(s) (ex. AB)? 
 SELECT `First Name`, `Last Name` 
 FROM `Recipient`
-WHERE `Blood Type` = 'B+;
+WHERE `Blood Type` = 'B+';
 
 
   -- 7. How many recipients are waiting for blood donations? 
