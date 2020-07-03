@@ -37,9 +37,10 @@ Design Diagrams Folder Contains: <br/>
 - Updated Relational Model <br/>
 
 Code Folder Contains: <br/>
-- project.sql File to Create Tablesand Set Security Permissions <br/>
+- project.sql File to Create Tables <br/>
 - projectInserts.sql File to Insert Data Into the Database <br/>
 - sqlQueries.sql File to Return the Requested Information From Our 20 Queries; Includes Should Return Comments to Ensure Correctness <br/>
+- permissions.sql to Set Security Permissions
 - Other SQL Files TBD to Return the Triggers, Procedures, and Views <br/>
 
 Presentation Folder Contains: <br/>
