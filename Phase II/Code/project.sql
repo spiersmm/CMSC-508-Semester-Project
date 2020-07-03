@@ -3,24 +3,24 @@
 
  --    First dropping any existing tables, Any errors are ignored
 
- drop table if exists `Blood Donor`;
- drop table if exists `Recipient`;
- drop table if exists Employee;
- drop table if exists `Blood Inventory`;
- drop table if exists Blood;
+ DROP TABLE if exists Blood_Donor;
+ DROP TABLE if exists Recipient;
+ DROP TABLE if exists Employee;
+ DROP TABLE if exists Blood_Inventory;
+ DROP TABLE if exists Blood;
 
 
  --    Now, we add each table 
   
- drop table if exists `Blood Donor`;
- CREATE TABLE `Blood Donor`(
- BloodID    INT PRIMARY KEY,
- `Blood type` VARCHAR(4),
- `First Name` VARCHAR(20),
- `Last Name` VARCHAR(20),
+ DROP TABLE if exists Blood_Donor;
+ CREATE TABLE Blood_Donor(
+  BloodID    INT PRIMARY KEY,
+  Blood_Type VARCHAR(4),
+  First_Name VARCHAR(20),
+  Last_Name VARCHAR(20),
   DOB          VARCHAR(30),
   Sex         VARCHAR(10),
- `Date of Donation`   VARCHAR(40),
+  Date_of_Donation   VARCHAR(40),
   Address     VARCHAR(50),
   Phone       VARCHAR(100)
 
@@ -28,52 +28,52 @@
 
 
 
-drop table if exists `Recipient`;
-create table `Recipient`(
+DROP TABLE if exists Recipient;
+CREATE TABLE Recipient(
  RecipientID INT PRIMARY KEY,
- `Blood Type` VARCHAR(20),
- `First Name` VARCHAR(20),
- `Last Name` VARCHAR(20),
-  DOB VARCHAR(20),
-  Sex VARCHAR(5),
- `Date of Receive` VARCHAR(20),
-  Visits INT
+ Blood_Type VARCHAR(20),
+ First_Name VARCHAR(20),
+ Last_Name VARCHAR(20),
+ DOB VARCHAR(20),
+ Sex VARCHAR(5),
+ Date_of_Receive VARCHAR(20),
+ Visits INT
 
 );
 
 
-drop table if exists Employee;
+DROP TABLE if exists Employee;
 CREATE TABLE Employee(
  EmpID INT PRIMARY KEY,
- `First Name` VARCHAR(20),
- `Last Name` VARCHAR(20),
-  DOB VARCHAR(15),
-  Sex VARCHAR(5),
- `Phone Number` VARCHAR(15),
-  Address VARCHAR(70),
-  Salary INT 
+ First_Name VARCHAR(20),
+ Last_Name VARCHAR(20),
+ DOB VARCHAR(15),
+ Sex VARCHAR(5),
+ Phone_Number VARCHAR(15),
+ Address VARCHAR(70),
+ Salary INT 
 
 );
 
 
-drop table if exists `Blood Inventory`;
-Create table `Blood Inventory`(
-BloodNO INT PRIMARY KEY,
-Description VARCHAR(50),
-`Blood Type` VARCHAR(5),
-`Order`      INT,
-Quantity     INT          
+DROP TABLE if exists Blood_Inventory;
+CREATE TABLE Blood_Inventory(
+ BloodNO INT PRIMARY KEY,
+ Description VARCHAR(50),
+ Blood_Type VARCHAR(5),
+ Priority      INT,
+ Quantity     INT          
 
 );
 
 
-drop table if exists Blood;
-Create Table Blood(
+DROP TABLE if exists Blood;
+CREATE TABLE Blood(
  BloodBagNo INT PRIMARY KEY,
- `Hemoglobin Count` INT,
- `Blood Type` VARCHAR(10),
- `Blood Amount` VARCHAR(15),
-  Cost VARCHAR(10)
+ Hemoglobin_Count INT,
+ Blood_Type VARCHAR(10),
+ Blood_Amount VARCHAR(15),
+ Cost VARCHAR(10)
 
 );
 
@@ -84,8 +84,8 @@ Create Table Blood(
 CREATE ROLE students;
 CREATE ROLE professor;
 
-GRANT students to spiersmm, akbari;
-GRANT professor to s2dmduke;
+GRANT students TO spiersmm, akbari;
+GRANT professor TO s2dmduke;
 
-GRANT SELECT ON `Blood Donor`, `Recipient`, Employee, `Blood Inventory`, Blood TO professor;
-GRANT ALL PRIVILEGES ON `Blood Donor`, `Recipient`, Employee, `Blood Inventory`, Blood TO students.
+GRANT SELECT ON Blood_Donor, Recipient, Employee, Blood_Inventory, Blood TO professor;
+GRANT ALL PRIVILEGES ON Blood_Donor, Recipient, Employee, Blood_Inventory, Blood TO students.
