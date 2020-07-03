@@ -1,4 +1,9 @@
-  -- 1. What is the current stock of the blood inventory? 
+ -- Ihtesham Akbar, Megan Spiers
+ 
+ -- SQL Queries
+ -- Should Return Statements are Accurate Using Our Sample Data
+ 
+ -- 1. What is the current stock of the blood inventory? 
 SELECT Blood_Type, Quantity 
 FROM Blood_Inventory;
 
