@@ -13,7 +13,7 @@ Team Member 2 GitHub Username: shamakbar <br/>
 
 
 ### Repository Description ###
-##### Phase I Information: #####
+#### Phase I Information: ####
 Documentation Folder Contains: <br/>
 - Problem Statement <br/>
 - Functional Dependency and Normalization Document <br/>
@@ -27,7 +27,7 @@ Design Diagrams Folder Contains:
 
 <br/>
 
-##### Phase II Information: #####
+#### Phase II Information: ####
 Documentation Folder Contains: <br/>
 - Updated Problem Statement <br/>
 - Updated Functional Dependency and Normalization Document <br/>
