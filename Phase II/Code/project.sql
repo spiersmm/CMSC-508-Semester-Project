@@ -1,4 +1,4 @@
-  -- Ihtesham Akbar, Megan Spiers
+ -- Ihtesham Akbar, Megan Spiers
  
  --         Database Table Creation 
 
