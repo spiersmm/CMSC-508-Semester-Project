@@ -2,6 +2,7 @@
 Repository for semester project for CMSC 508, Summer 2020 <br/>
 Note: All Work is an Effort of Both Team Members, Regardless of Who Made the Commit
 
+
 ### Team Members ###
 Team Member 1: Megan Spiers <br/>
 Team Member 1 Email: spiersmm@vcu.edu <br/>
@@ -41,7 +42,20 @@ Code Folder Contains: <br/>
 - projectInserts.sql File to Insert Data Into the Database <br/>
 - sqlQueries.sql File to Return the Requested Information From Our 20 Queries; Includes Should Return Comments to Ensure Correctness <br/>
 - permissions.sql to Set Security Permissions
-- Other SQL Files TBD to Return the Triggers, Procedures, and Views <br/>
+- views.sql to Set Views for Database <br/>
+- triggers.sql to Set Triggers for Database <br/>
+- procedures.sql to Set Procedures for Database <br/>
 
 Presentation Folder Contains: <br/>
 - All Presentation Information <br/>
+
+<br/>
+
+## To Run Our Database ###
+1. Naviagate to google cloud platform and sign in
+2. Naviagate to MyFirstProject Project (Should have been shared with you)
+3. Naviagate to Cloud Shell Terminal
+4. Enter "gcloud sql connect cmsc508-project --user=root --quiet" and press ENTER
+5. When Prompted for Password, Just press ENTER
+6. Enter "use CMSC508Project" and press ENTER
+7. Begin Whatever Queries You Would Like
