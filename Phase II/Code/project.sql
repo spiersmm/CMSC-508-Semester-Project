@@ -75,5 +75,17 @@ Create Table Blood(
  `Blood Amount` VARCHAR(15),
   Cost VARCHAR(10)
 
-
 );
+
+
+ -- Grant Permissions
+ -- This does not work in gcloud as roles and permissions are set differently there; however, 
+ -- it was requested that this code be in our project.
+CREATE ROLE students;
+CREATE ROLE professor;
+
+GRANT students to spiersmm, akbari;
+GRANT professor to s2dmduke;
+
+GRANT SELECT ON `Blood Donor`, `Recipient`, Employee, `Blood Inventory`, Blood TO professor;
+GRANT ALL PRIVILEGES ON `Blood Donor`, `Recipient`, Employee, `Blood Inventory`, Blood TO students.
