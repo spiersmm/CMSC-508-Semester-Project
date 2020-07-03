@@ -175,12 +175,12 @@ WHERE Blood_Type = 'A-';
 
 
  -- 14. What is the list of all available blood donors? 
-SELECT CONCAT(First_Name, ' ', Last_Name) as "Blood Donor"
-FROM Blood_Donor;
+SELECT *
+FROM All_Donors;
 
  -- Should Return:
  --              +---------------+
- --              | Blood Donor   |
+ --              | Donor Names   |
  --              +---------------+
  --              | Aaron Rodgers |
  --              | Tom Brady     |
