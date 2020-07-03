@@ -1,11 +1,12 @@
  -- Ihtesham Akbar, Megan Spiers
  
  -- SQL Queries
+ -- Some Queries Use the View We Created
  -- Should Return Statements are Accurate Using Our Sample Data
  
  -- 1. What is the current stock of the blood inventory? 
-SELECT Blood_Type, Quantity 
-FROM Blood_Inventory;
+SELECT *
+FROM Blood_Inventory_Stock;
 
  -- Should Return:
  --              +------------+----------+
@@ -95,9 +96,8 @@ FROM Recipient;
 
 
  -- 8. What is priority of blood need in the blood inventory? 
-SELECT Blood_Type, Priority
-FROM Blood_Inventory
-ORDER BY Priority ASC;
+SELECT *
+FROM Blood_Priority;
 
  -- Should Return:
  --              +------------+----------+
