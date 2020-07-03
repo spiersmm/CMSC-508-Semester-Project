@@ -32,9 +32,7 @@ WHERE BloodBagNo = 25;
 
 
  -- 3. What is the gender of the recipient of a specific blood type (ex. B+)? 
-SELECT Sex 
-FROM Recipient 
-WHERE Blood_Type= 'B+';
+EXEC RecipientGenderFromBloodType @Blood_Type = 'B+';
 
  -- Should Return:
  --              +------+
@@ -45,9 +43,7 @@ WHERE Blood_Type= 'B+';
 
 
  -- 4. Which blood donors have a specific blood group (ex. AB-)?
-SELECT First_Name, Last_Name
-FROM Blood_Donor
-WHERE Blood_Type = 'AB-';
+EXEC DonorFromBloodType @Blood_Type = 'AB-';
 
  -- Should Return:
  --              +------------+-----------+
