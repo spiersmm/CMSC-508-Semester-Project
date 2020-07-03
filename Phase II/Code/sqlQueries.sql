@@ -1,6 +1,15 @@
   -- 1. What is the current stock of the blood inventory? 
-SELECT `Blood type`, Quantity 
-FROM `Blood Inventory`;
+SELECT Blood_Type, Quantity 
+FROM Blood_Inventory;
+
+  -- Should Return:
+  --                +------------+----------+
+  --                | Blood_Type | Quantity |
+  --                +------------+----------+
+  --                | AB-        |       12 |
+  --                | B+         |       30 |
+  --                | O-         |       51 |
+  --                +------------+----------+
 
 
   -- 2. What is the hemoglobin count of a certain BloodBagNo (ex. 25)? 
