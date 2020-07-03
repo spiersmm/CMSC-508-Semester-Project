@@ -1,3 +1,7 @@
+ -- Ihtesham Akbar, Megan Spiers
+ 
+ -- Insert Data Into Database
+
 INSERT INTO Blood_Donor VALUES (5321521, 'B+', 'Tom', 'Brady', '08/03/1977', 'M', '06/01/2020', '6666 Tampa Bay, Buccs Ave', '777-888-9999');
 INSERT INTO Blood_Donor VALUES (2326223, 'AB-', 'Aaron', 'Rodgers', '12/02/1983', 'M', '04/15/2020', '444 Green Bay, Packers St', '444-555-6666');
 INSERT INTO Blood_Donor VALUES (6422344, 'O+', 'Drew', 'Brees', '01/15/1979', 'M', '05/20/2019', '555 New Orleans, Saints Rd', '555-555-5555');
