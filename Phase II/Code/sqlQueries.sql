@@ -7,123 +7,260 @@
 SELECT Blood_Type, Quantity 
 FROM Blood_Inventory;
 
-  -- Should Return:
-  --                +------------+----------+
-  --                | Blood_Type | Quantity |
-  --                +------------+----------+
-  --                | AB-        |       12 |
-  --                | B+         |       30 |
-  --                | O-         |       51 |
-  --                +------------+----------+
+ -- Should Return:
+ --              +------------+----------+
+ --              | Blood_Type | Quantity |
+ --              +------------+----------+
+ --              | AB-        |       12 |
+ --              | B+         |       30 |
+ --              | O-         |       51 |
+ --              +------------+----------+
 
 
-  -- 2. What is the hemoglobin count of a certain BloodBagNo (ex. 25)? 
-SELECT `Hemoglobin Count`
-FROM `Blood`
+ -- 2. What is the hemoglobin count of a certain BloodBagNo (ex. 25)? 
+SELECT Hemoglobin_Count
+FROM Blood
 WHERE BloodBagNo = 25;
 
+ -- Should Return:
+ --              +------------------+
+ --              | Hemoglobin_Count |
+ --              +------------------+
+ --              |               13 |
+ --              +------------------+
 
-  -- 3. What is the gender of the recipient of a specific blood type (ex. B+)? 
+
+ -- 3. What is the gender of the recipient of a specific blood type (ex. B+)? 
 SELECT Sex 
-FROM `Recipient` 
-WHERE `Blood Type`= 'B+';
+FROM Recipient 
+WHERE Blood_Type= 'B+';
+
+ -- Should Return:
+ --              +------+
+ --              | Sex  |
+ --              +------+
+ --              | M    |
+ --              +------+
 
 
-  -- 4. Which blood donors have a specific blood group (ex. AB-)?
-SELECT `First Name`, `Last Name`
-FROM `Blood Donor`
-WHERE `Blood Type` = 'AB-';
+ -- 4. Which blood donors have a specific blood group (ex. AB-)?
+SELECT First_Name, Last_Name
+FROM Blood_Donor
+WHERE Blood_Type = 'AB-';
+
+ -- Should Return:
+ --              +------------+-----------+
+ --              | First_Name | Last_Name |
+ --              +------------+-----------+
+ --              | Aaron      | Rodgers   |
+ --              +------------+-----------+
 
 
-  -- 5. What is the contact information of a specific blood donor (ex. Tom Brady)? 
+ -- 5. What is the contact information of a specific blood donor (ex. Tom Brady)? 
 SELECT Phone 
-FROM `Blood Donor` 
-WHERE (`First Name` = 'Tom') AND (`Last Name` = 'Brady'); 
+FROM Blood_Donor 
+WHERE (First_Name = 'Tom') AND (Last_Name = 'Brady'); 
+
+ -- Should Return:
+ --              +--------------+
+ --              | Phone        |
+ --              +--------------+
+ --              | 777-888-9999 |
+ --              +--------------+
 
 
-  -- 6. What is/are the name(s) of a specific blood type recipient(s) (ex. AB)? 
-SELECT `First Name`, `Last Name` 
-FROM `Recipient`
-WHERE `Blood Type` = 'B+';
+ -- 6. What is/are the name(s) of a specific blood type recipient(s) (ex. AB)? 
+SELECT First_Name, Last_Name 
+FROM Recipient
+WHERE Blood_Type = 'B+';
+
+ -- Should Return:
+ --              +------------+-----------+
+ --              | First_Name | Last_Name |
+ --              +------------+-----------+
+ --              | Anakin     | Skywalker |
+ --              +------------+-----------+
 
 
-  -- 7. How many recipients are waiting for blood donations? 
+ -- 7. How many recipients are waiting for blood donations? 
 SELECT COUNT(*) AS "Recipients Waiting"
-FROM `Recipient`;
+FROM Recipient;
+
+ -- Should Return:
+ --              +--------------------+
+ --              | Recipients Waiting |
+ --              +--------------------+
+ --              |                  3 |
+ --              +--------------------+
 
 
-  -- 8. What is priority of blood need in the blood inventory? 
-SELECT `Blood Type`, `Order`
-FROM `Blood Inventory`
-ORDER BY `Order` ASC;
+ -- 8. What is priority of blood need in the blood inventory? 
+SELECT Blood_Type, Priority
+FROM Blood_Inventory
+ORDER BY Priority ASC;
+
+ -- Should Return:
+ --              +------------+----------+
+ --              | Blood_Type | Priority |
+ --              +------------+----------+
+ --              | AB-        |        1 |
+ --              | B+         |        2 |
+ --              | O-         |        3 |
+ --              +------------+----------+
 
 
-  -- 9. What is the description on a certain bloodno (ex. 42785)?
-SELECT `Description`
-FROM `Blood Inventory`
+ -- 9. What is the description on a certain bloodno (ex. 42785)?
+SELECT Description
+FROM Blood_Inventory
 WHERE BloodNo = '42785';
 
-
-  -- 10. When was the last time the blood donor donated (ex. Drew Brees)? 
-SELECT `Date of Donation`
-FROM `Blood Donor`
-WHERE (`First Name` LIKE 'Drew') AND (`Last Name` LIKE 'Brees');
-
-
-  -- 11. What date did a specific patient receive the blood (ex. Padme Amidala)? 
-SELECT `Date of Receive` 
-FROM `Recipient`
-WHERE (`First Name` LIKE 'Padme') AND (`Last Name` LIKE 'Amidala');
+ -- Should Return:
+ --              +------------------+
+ --              | Description      |
+ --              +------------------+
+ --              | No Complications |
+ --              +------------------+
 
 
-  -- 12. What is the blood amount for a certain blood bag no (ex. 0027)?
-SELECT `Blood Amount`
-FROM `Blood`
+ -- 10. When was the last time the blood donor donated (ex. Drew Brees)? 
+SELECT Date_of_Donation
+FROM Blood_Donor
+WHERE (First_Name LIKE 'Drew') AND (Last_Name LIKE 'Brees');
+
+ -- Should Return:
+ --              +------------------+
+ --              | Date_of_Donation |
+ --              +------------------+
+ --              | 05/20/2019       |
+ --              +------------------+
+
+
+ -- 11. What date did a specific patient receive the blood (ex. Padme Amidala)? 
+SELECT Date_of_Receive 
+FROM Recipient
+WHERE (First_Name LIKE 'Padme') AND (Last_Name LIKE 'Amidala');
+
+ -- Should Return:
+ --              +-----------------+
+ --              | Date_of_Receive |
+ --              +-----------------+
+ --              | 04/30/2020      |
+ --              +-----------------+
+
+
+ -- 12. What is the blood amount for a certain blood bag no (ex. 0027)?
+SELECT Blood_Amount
+FROM Blood
 WHERE BloodBagNo = 0027;
 
+ -- Should Return:
+ --              +--------------+
+ --              | Blood_Amount |
+ --              +--------------+
+ --              | 1 Pint       |
+ --              +--------------+
 
-  -- 13. What is the cost of a specific blood transfusion (ex. A-)? 
+
+ -- 13. What is the cost of a specific blood transfusion (ex. A-)? 
 SELECT Cost
-FROM `Blood`
-WHERE `Blood Type` = 'A-';
+FROM Blood
+WHERE Blood_Type = 'A-';
+
+ -- Should Return:
+ --              +------+
+ --              | Cost |
+ --              +------+
+ --              | $275 |
+ --              +------+
 
 
-  -- 14. What is the list of all available blood donors? 
-SELECT * 
-FROM `Blood Donor`;
+ -- 14. What is the list of all available blood donors? 
+SELECT CONCAT(First_Name, ' ', Last_Name) as "Blood Donor"
+FROM Blood_Donor;
+
+ -- Should Return:
+ --              +---------------+
+ --              | Blood Donor   |
+ --              +---------------+
+ --              | Aaron Rodgers |
+ --              | Tom Brady     |
+ --              | Drew Brees    |
+ --              +---------------+
 
 
-  -- 15. What is the date of birth of a certain employee (ex. Gale Hawthorne)?
+ -- 15. What is the date of birth of a certain employee (ex. Gale Hawthorne)?
 SELECT DOB
 FROM Employee
-WHERE (`First Name` like 'Gale') AND (`Last Name` like 'Hawthorne');
+WHERE (First_Name like 'Gale') AND (Last_Name like 'Hawthorne');
+
+ -- Should Return:
+ --              +------------+
+ --              | DOB        |
+ --              +------------+
+ --              | 08/20/1996 |
+ --              +------------+
 
 
-  -- 16. What is the address of a certain employee (ex. Katniss Everdeen)? 
+ -- 16. What is the address of a certain employee (ex. Katniss Everdeen)? 
 SELECT Address 
 FROM Employee 
-WHERE (`First Name` LIKE 'Katniss') AND (`Last Name` LIKE 'Everdeen');
+WHERE (First_Name LIKE 'Katniss') AND (Last_Name LIKE 'Everdeen');
+
+ -- Should Return:
+ --              +-------------------------+
+ --              | Address                 |
+ --              +-------------------------+
+ --              | 1111 Victors Village Rd |
+ --              +-------------------------+
 
 
-  -- 17. What is the salary of a certain employee (ex. Katniss Everdeen)? 
+ -- 17. What is the salary of a certain employee (ex. Katniss Everdeen)? 
 SELECT Salary 
 FROM Employee 
-WHERE (`First Name` LIKE 'Katniss') AND (`Last Name` LIKE 'Evedeen');
+WHERE (First_Name LIKE 'Katniss') AND (Last_Name LIKE 'Everdeen');
+
+ -- Should Return:
+ --              +--------+
+ --              | Salary |
+ --              +--------+
+ --              | 100000 |
+ --              +--------+
 
 
-  -- 18. How many blood donations took place on a certain date (ex. 05/20/2019)? 
-SELECT COUNT(*)
-FROM `Blood Donor`
-WHERE `Date of Donation` = '05/20/2019';
+ -- 18. How many blood donations took place on a certain date (ex. 05/20/2019)? 
+SELECT COUNT(*) AS "Number of Donations"
+FROM Blood_Donor
+WHERE Date_of_Donation = '05/20/2019';
+
+ -- Should Return:
+ --              +---------------------+
+ --              | Number of Donations |
+ --              +---------------------+
+ --              |                   1 |
+ --              +---------------------+
 
 
-  -- 19. What is the BloodID of a certain blood donor (ex. Aaron Rodgers)?
+ -- 19. What is the BloodID of a certain blood donor (ex. Aaron Rodgers)?
 SELECT BloodID
-FROM `Blood Donor`
-WHERE (`First Name` LIKE 'Aaron') AND (`Last Name` LIKE 'Rodgers');
+FROM Blood_Donor
+WHERE (First_Name LIKE 'Aaron') AND (Last_Name LIKE 'Rodgers');
+
+ -- Should Return:
+ --              +---------+
+ --              | BloodID |
+ --              +---------+
+ --              | 2326223 |
+ --              +---------+
 
 
-  -- 20. How many visits did a specific blood recipient have so far (ex. Ahsoka Tano)?
+ -- 20. How many visits did a specific blood recipient have so far (ex. Ahsoka Tano)?
 SELECT Visits 
-FROM `Recipient`
-WHERE (`First Name` LIKE 'Ahsoka') AND (`Last Name` LIKE 'Tano');
+FROM Recipient
+WHERE (First_Name LIKE 'Ahsoka') AND (Last_Name LIKE 'Tano');
+
+ -- Should Return:
+ --              +--------+
+ --              | Visits |
+ --              +--------+
+ --              |      3 |
+ --              +--------+
