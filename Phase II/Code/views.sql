@@ -79,3 +79,16 @@ SELECT * FROM Blood_Priority;
  --              | B+         |        2 |
  --              | O-         |        3 |
  --              +------------+----------+
+ 
+ 
+ 
+ 
+ 
+ -- 5. Employee Salary
+CREATE VIEW EmpSalary as
+SELECT Salary 
+FROM Employee 
+WHERE Salary > 100;
+
+SELECT * from EmpSalary;
+
