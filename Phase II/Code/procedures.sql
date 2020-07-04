@@ -36,6 +36,22 @@ call HemoCount(0032) /
 
 
 
+                                      
+ delimiter /
+
+CREATE PROCEDURE Dvisits(IN c INT(10)) 
+
+BEGIN
+
+select First_Name, Last_Name
+from Recipient
+Where  Visits >= c;
+
+End;
+
+/
+
+call Dvisits(4) /
 
 
 
