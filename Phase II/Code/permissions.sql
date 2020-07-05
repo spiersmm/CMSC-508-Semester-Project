@@ -10,5 +10,7 @@ CREATE ROLE professor;
 GRANT students TO spiersmm, akbari;
 GRANT professor TO s2dmduke;
 
-GRANT SELECT ON Blood_Donor, Recipient, Employee, Blood_Inventory, Blood TO professor;
-GRANT ALL PRIVILEGES ON Blood_Donor, Recipient, Employee, Blood_Inventory, Blood TO students.
+GRANT SELECT ON Blood_Donor, Recipient, Employee, 
+                Blood_Inventory, Blood TO professor;
+GRANT ALL PRIVILEGES ON Blood_Donor, Recipient, Employee, 
+                Blood_Inventory, Blood TO students.
