@@ -47,7 +47,10 @@ Code Folder Contains: <br/>
 - procedures.sql to Set Procedures for Database <br/>
 
 Presentation Folder Contains: <br/>
-- All Presentation Information <br/>
+- Audio Files Folder Containing All Audio Files Used In Presentation <br/>
+- Video Files Folder Containing All Video Files Used In Presentation <br/>
+- PowerPoint Folder Containing the pdf of the PowerPoint Presentation <br/>
+- Final Presentation.mp4 File, Which Is Our Final Presentation <br/>
 
 <br/>
 
