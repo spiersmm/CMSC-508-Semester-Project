@@ -6,7 +6,7 @@ Note: All Work is an Effort of Both Team Members, Regardless of Who Made the Com
 ### Team Members ###
 Team Member 1: Megan Spiers <br/>
 Team Member 1 Email: spiersmm@vcu.edu <br/>
-Team Member 1 GitHub Username: CyberSpyers <br/>
+Team Member 1 GitHub Username: spiersmm <br/>
 <br/>
 Team Member 2: Ihtesham Akbar <br/>
 Team Member 2 Email: akbari@vcu.edu <br/>
